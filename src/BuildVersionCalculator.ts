@@ -304,7 +304,7 @@ export default class BuildVersionCalculator {
       return false;
     }
     // *** Build triggered by a tag in the (possible) format of a version ***
-    const [,, version] = match;
+    const [, , version] = match;
     this.log.debug(`Trigger is release tag, version = '${version}'`);
     const buildType = BuildType.Release;
     const preReleaseLabel = null;
